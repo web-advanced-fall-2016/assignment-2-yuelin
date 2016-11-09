@@ -2,7 +2,7 @@
 
 ## Accordion
 
-https://web-advanced-fall-2016.github.io/assignment-2-YueLin/www
+https://web-advanced-fall-2016.github.io/assignment-2-yuelin/www/
 
 ![Alt text](www/img/screenshot1.png?raw=true "screenShot")
 ![Alt text](www/img/screenshot2.png?raw=true "screenShot")
