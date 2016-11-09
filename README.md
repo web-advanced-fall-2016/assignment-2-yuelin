@@ -4,8 +4,8 @@
 
 https://web-advanced-fall-2016.github.io/assignment-2-YueLin/www
 
-![Alt text](/www/img/ScreenShot1.png?raw=true "screenShot")
-![Alt text](/www/img/ScreenShot2.png?raw=true "screenShot")
+![Alt text](www/img/ScreenShot1.png?raw=true "screenShot")
+![Alt text](www/img/ScreenShot2.png?raw=true "screenShot")
 
 
 ## Assignment Specification
