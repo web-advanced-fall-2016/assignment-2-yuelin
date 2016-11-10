@@ -45,11 +45,15 @@
                     let profileTemp = document.createElement('div');
                     profileTemp.classList.add('profile');
                     profileTemp.innerHTML = `
+                    <div class = "closeIcon">X</div>
                     <div class="pic">
                     <img src="${baseURL}${res.profile_picture}">
                     </div>
                     <div class="name">
                     <h3>${res.first_name} ${res.last_name}</h3>
+                    </div>
+                    <div class="email">
+                    <p>${res.email}</p>
                     </div>
                     <div class="description">
                     <p>${res.excerpt}</p>
@@ -57,17 +61,25 @@
                     `;
                     myModal.appendChild(profileTemp);
                     myModal.style.display = "block";
-                    window.onclick = function(event) {
-                        if (myModal.style.display === "block") {
-                            myModal.style.display = "none";
-                            myModal.removeChild(profileTemp);
-                            // myModal.sibilingNo
-                        }
-                    }
+                    closeModal(profileTemp);
                 });
             }
         });
     }
+
+    function closeModal(tab){
+        myModal.onclick = function(evnt) {
+            console.log(event.target);
+            if( evnt.target === this || evnt.target.classList.contains('closeIcon')){
+                if (myModal.style.display === "block") {
+                    myModal.style.display = "none";
+                    myModal.removeChild(tab);
+                    // myModal.sibilingNo
+                }
+            }
+        }
+    }
+
     function app() {
         getStudentThumb();
         // let modal = new SimpleModal('mymodal');
